@@ -1,5 +1,5 @@
 # Bentoml example
-Example of using `bentoml` to setup an API, and calling that API to get inferences.
+Example of using `bentoml` to setup an API for a Machine Learning model, and calling that API to get inferences. 
 
 Example is adapted from the `bentoml` documentation: https://github.com/bentoml/BentoML#getting-started
 ## Setup project environment
