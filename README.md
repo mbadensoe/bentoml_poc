@@ -50,3 +50,11 @@ In the terminal where the `BENTO_SERVICE` got started, contains additional infor
 ```
 127.0.0.1 - - [16/May/2020 19:26:18] "POST /predict HTTP/1.1" 200 -
 ```
+## Getting inferences without serving the API
+It is possible to get inferences without actually serving the service. This is done directly using `bentoml` in the following way:
+```
+> bentoml run IrisClassifier:latest predict --input='[[5.1, 3.5, 1.4, 0.2],[10,10,10,10]]'
+
+[2020-05-17 18:28:04,773] INFO - Getting latest version IrisClassifier:20200517113140_E1B100
+['setosa', 'virginica']
+```
